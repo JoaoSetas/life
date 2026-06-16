@@ -1,0 +1,68 @@
+# Hourly life check-in.
+#
+# Runs the /checkin routine on a schedule, commits the updated log, and posts
+# the nudge as a comment on a standing GitHub issue so João gets a phone
+# notification each hour.
+#
+# ── BEFORE THIS WORKS, DO THREE THINGS (see docs/AUTOMATION.md) ──
+#   1. Add repo secret  ANTHROPIC_API_KEY   (Settings → Secrets → Actions)
+#   2. Create one issue titled "📋 Daily Check-ins" and set repo variable
+#      CHECKIN_ISSUE_NUMBER to its number (Settings → Variables → Actions)
+#   3. Merge this workflow to the DEFAULT branch (GitHub only runs cron there)
+#
+# Note: GitHub cron is best-effort and can be delayed several minutes under load.
+
+name: Hourly check-in
+
+on:
+  workflow_dispatch: {}   # lets you run it manually to test
+  schedule:
+    # Hourly, ~08:00–22:00 Lisbon time. Portugal is UTC+1 in summer (WEST),
+    # so this UTC window ≈ 08:00–22:00 local in summer (shift by 1h in winter).
+    - cron: "0 7-21 * * *"
+
+# Don't pile up runs if one is slow.
+concurrency:
+  group: hourly-checkin
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # commit the updated log
+  issues: write     # post the nudge as an issue comment
+
+jobs:
+  checkin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run /checkin
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Allow the file + shell + GitHub tools the routine needs.
+          claude_args: "--allowedTools Bash,Read,Write,Edit"
+          prompt: |
+            Run the /checkin skill exactly as defined in routines/checkin-protocol.md.
+            This is an AUTOMATED, non-interactive run, so:
+              - Do all the file work: create today's log from logs/TEMPLATE.md if
+                missing, append the check-in entry, and update memory as needed.
+              - Do NOT ask any questions (no one is here to answer).
+              - Produce the short nudge block from the protocol as your final output.
+            Then post that nudge as a comment on issue #${{ vars.CHECKIN_ISSUE_NUMBER }}
+            using: gh issue comment ${{ vars.CHECKIN_ISSUE_NUMBER }} --body "<nudge>"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Commit log & memory updates
+        run: |
+          git config user.name  "life-bot"
+          git config user.email "life-bot@users.noreply.github.com"
+          git add logs/ memory/ context/ || true
+          if ! git diff --cached --quiet; then
+            git commit -m "checkin: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No changes to commit."
+          fi
