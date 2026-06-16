@@ -35,15 +35,17 @@ You can also just **talk to it**: "remember to call the clinic Monday", "what sh
 for her tonight?", "I emptied the dishwasher and brought her tea."
 
 ## Make it run every hour
-The routine works the moment you open a session. To make it fire **on its own**, see
-[`docs/AUTOMATION.md`](docs/AUTOMATION.md) — either scheduled Claude Code sessions
-(recommended, no setup) or the included GitHub Actions cron (notifies your phone).
+The hourly check-in runs as a **Claude Code Routine** (cloud scheduler) — set up at
+[claude.ai/code/routines](https://claude.ai/code/routines), hourly 8am–10pm. The full
+setup, the cron (`0 8-22 * * *`), and the prompt are in
+[`docs/AUTOMATION.md`](docs/AUTOMATION.md). Each run is a session you can open on web or
+mobile to read the nudge and reply.
 
 ## Make it yours (2-minute setup)
 - [ ] Add your **wife's name** and the **pets' names** in [`context/family.md`](context/family.md).
 - [ ] Confirm the **due date** and add **appointment dates** in [`context/pregnancy.md`](context/pregnancy.md).
 - [ ] Confirm your **work week** (remote days, hours) in [`context/about-me.md`](context/about-me.md).
-- [ ] Pick an automation option in [`docs/AUTOMATION.md`](docs/AUTOMATION.md).
+- [ ] Merge this to `main` so the hourly [Routine](docs/AUTOMATION.md) has something to run.
 
 ## Layout
 ```

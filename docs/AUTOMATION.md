@@ -1,51 +1,68 @@
-# Making it run every hour
+# Automation — the hourly check-in routine
 
-The check-in logic (`/checkin`) works **right now** the moment you open a Claude
-Code session on this repo. The only question is how to make it fire **on its own,
-every hour, without you opening anything.** Here are your options, simplest first.
+The hourly check-in runs as a **Claude Code Routine** (cloud scheduler), set up at
+[claude.ai/code/routines](https://claude.ai/code/routines). Each run is a full cloud
+session that clones this repo, runs `/checkin`, logs the result, and can ask me a
+question I answer later from web or mobile. See the official docs:
+https://code.claude.com/docs/en/routines
 
-## Option A — Scheduled Claude Code sessions (recommended, no API key) ✅
-Claude Code on the web can run on a **schedule/trigger**. Point a recurring
-trigger at this repo with the prompt `Run /checkin`.
+## How it's configured
+- **Repository:** `life`, with **Allow unrestricted branch pushes** enabled (Permissions
+  tab) so each run can commit the daily log to `main` — that's how this hour's check-in
+  carries into next hour's.
+- **Environment:** Default (Trusted network is enough; the check-in only touches repo files).
+- **Schedule:** hourly, **08:00–22:00 Lisbon**, via the cron `0 8-22 * * *`.
+- **Prompt:** the tough-love check-in prompt (below).
 
-- **Pros:** native to what you're already using; no secrets; full intelligence;
-  you can reply in the session to log what you did.
-- **How:** in the Claude Code web app, create a scheduled trigger for this repo
-  (e.g. hourly, 08:00–22:00) with prompt `Run /checkin`. See
-  https://code.claude.com/docs/en/claude-code-on-the-web for triggers.
-- **Delivery:** the nudge shows in the session; enable notifications to get pinged.
+## ⚠️ The routine clones `main`
+Every run starts from the repository's **default branch (`main`)** and uses the `/checkin`
+skill committed there. So the system files must be **merged to `main`** for the routine to
+do anything — a routine pointed at an empty/stale `main` runs but accomplishes nothing.
 
-## Option B — GitHub Actions cron (fully hands-off, sends notifications) 🤖
-The included workflow `.github/workflows/hourly-checkin.yml` runs hourly, updates
-the log, and posts the nudge to a GitHub issue (which notifies your phone via the
-GitHub app/email).
+## Setting the 8am–10pm window (cron)
+The web form only offers presets (hourly / daily / weekdays / weekly) — no hour range.
+A custom cron is set with **`/schedule update` in a local terminal CLI** (the `/schedule`
+command is disabled inside web sessions, and the minimum interval is 1 hour):
 
-**Setup (one time):**
-1. **Add the API key:** repo → Settings → Secrets and variables → Actions →
-   *New repository secret* → `ANTHROPIC_API_KEY` = your key.
-2. **Create the notification issue:** open one issue titled `📋 Daily Check-ins`,
-   note its number, then add a repo *Variable* `CHECKIN_ISSUE_NUMBER` = that number.
-3. **Merge to the default branch.** GitHub only runs scheduled workflows from the
-   default branch.
-4. **Test it now:** Actions tab → *Hourly check-in* → *Run workflow*.
-5. **Get notified:** install the GitHub mobile app and enable notifications, or
-   make sure issue-comment emails are on. Each hour you'll get the nudge.
+```
+0 8-22 * * *
+```
 
-- **Pros:** truly autonomous; real phone notifications; auto-commits your log.
-- **Cons:** needs an API key (small token cost per run); GitHub cron can lag a few
-  minutes; one-way (you log what you did next time you open a session).
-- **Tune the hours:** edit the `cron:` line. `0 7-21 * * *` ≈ hourly 08:00–22:00
-  Lisbon time in summer (shift 1h in winter — see comment in the file).
+Fires at minute 0 of hours 8–22 daily = 8am…10pm, 15 runs/day. Schedules are entered in
+your local zone and converted automatically; `/schedule update` confirms the absolute
+times — verify it reads 08:00–22:00 Lisbon. If the raw cron is treated as UTC, use
+`0 7-21 * * *` (Lisbon is UTC+1 in summer).
 
-## Option C — Both
-Use **A** for the interactive, reply-and-log experience when you're free, and **B**
-as the always-on safety net that pings you even when you forget. They share the same
-log files, so they stay in sync.
+No local terminal? The web UI can only do the `hourly` preset (24/7); pause overnight with
+the **Repeats** toggle.
 
-## Reducing the cost / noise
-- Narrow the hours (you don't need a 3 a.m. nudge).
-- Skip nights and maybe mid-day deep-work blocks.
-- The nudge is intentionally short so notifications are glanceable.
+## The routine prompt
+```
+You are João's tough-love life coach. Run the /checkin skill for this repo,
+following routines/checkin-protocol.md exactly.
 
-> Tell me which option you want and I'll wire it up precisely (including the exact
-> trigger config or tuning the workflow to your real wake/work hours).
+Each run is a session I can open later on web or mobile, so DO talk to me.
+
+On the automated run (before I reply):
+- Run `date` for the real local date/time; compute the pregnancy week from context/pregnancy.md.
+- Create today's log logs/YYYY-MM-DD.md from logs/TEMPLATE.md if missing; append this check-in.
+- Commit and push to main now, so it's recorded even if I never open this run:
+    git add -A && git commit -m "checkin" && git push
+- Then output the short nudge block, and ASK me: what have I knocked out since the last
+  check-in, and is there anything to remember or want ideas for?
+
+When I reply in the session:
+- Tick today's checkboxes, log what I did, add wins to memory/wins.md, save anything to
+  remember in memory/remember.md — then commit and push again.
+
+TONE: tough-love coach — direct, hold me accountable, call out dropped musts and broken
+streaks, push me to do better. No fluff.
+```
+
+## Managing it
+- **Run now / pause / edit:** on the routine's detail page (Run now button, Repeats toggle,
+  pencil icon).
+- **Read a nudge / reply:** open the run as a session (web or Claude mobile app) and continue
+  the conversation; your reply gets logged and pushed on the next turn.
+- **Usage:** routines draw down subscription usage and have a daily run cap — see
+  [claude.ai/settings/usage](https://claude.ai/settings/usage).
