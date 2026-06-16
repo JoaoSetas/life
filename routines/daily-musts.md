@@ -10,10 +10,8 @@
 - [ ] **One proactive household task** beyond the above (see `context/household.md` → wins).
 - [ ] **Ask my wife about her day** and actually listen.
 
-## Pet care (don't let it all fall on her)
-- [ ] Dog walked (×_[how many?]_).
-- [ ] Cats fed / water topped up.
-- [ ] **Litter boxes** — _my job while she's pregnant_ (cat litter is a pregnancy hazard).
+## Pet care
+- [ ] Dog walked (~11:00 — preferred time).
 
 ## Why these three are the headline
 Dishwasher, garbage, tidiness — these are the small recurring things that, when I drop them, create friction and land on her. **Nailing these every day is the fastest way to reduce conflict and show I've got the home handled.**

@@ -11,7 +11,7 @@
 - [ ] (daily) Empty the dishwasher — don't let her do it.
 - [ ] (daily) Take out the garbage on the dog walk.
 - [ ] (daily) One caring act + ask about her day first.
-- [ ] (daily, while pregnant) Litter boxes are my job.
+- [ ] (daily, ~11:00) Dog walk — preferred time.
 - [ ] (Mondays) Send a warm message from Porto during the day.
 
 ## Upcoming / one-off

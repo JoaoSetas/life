@@ -9,9 +9,7 @@
 - [ ] One caring act for my wife
 - [ ] One proactive household task
 - [ ] Asked about her day & listened
-- [ ] Dog walked
-- [ ] Cats fed / water
-- [ ] Litter boxes (my job)
+- [ ] Dog walked (~11:00)
 {{MONDAY_LINE}}
 
 ## Check-ins
