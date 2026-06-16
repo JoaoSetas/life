@@ -6,10 +6,11 @@
 Newest at top. Format: `- YYYY-MM-DD: what I did (and her reaction, if any)`
 
 ## 2026
-- _(start logging — your first win goes here)_
+- 2026-06-16: Asked about her day and listened
+- 2026-06-16: Gave her a foot massage at 22w
 
 ---
 ### Streaks (update on review)
 - 🍽️ Dishwasher-emptied days in a row: **0**
 - 🗑️ Garbage-out days in a row: **0**
-- 💛 Days with a caring act: **0**
+- 💛 Days with a caring act: **1**

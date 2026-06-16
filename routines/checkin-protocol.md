@@ -34,13 +34,14 @@
 
 ## Output format (keep it this short)
 ```
-🕐 Check-in · <Weekday> <HH:MM> · pregnancy ~<N>w
-👉 Right now: <one concrete action for this time block>
-✅ Still open today: <only the unchecked musts, e.g. dishwasher · garbage>
-💛 For <wife>: <one specific caring idea, not repeated today>
-📌 Remember: <due/important item> (omit line if none)
+<Weekday> <HH:MM> · ~<N>w
+
+Do now → <one concrete action>
+Open   → <unchecked musts, comma-separated>
+Her    → <one caring idea, rotated>
+📌      → <due item> (omit line if nothing due)
 ```
-Then ask (interactive only): **"What have you knocked out since the last check-in?"** and log the answer.
+Then ask (interactive only): **"What have you knocked out? Anything to remember?"**
 
 ## Principles
 - **One headline action.** Don't dump a list; lead with the single most useful thing.
