@@ -13,7 +13,7 @@
 ## Medium (an evening / small spend)
 - Cook or take charge of dinner + full cleanup.
 - Run her a bath; foot or back rub after.
-- Bring home a small treat or flowers.
+- Bring home a small treat or flowers. (She loves **meloa** — easy win.)
 - Plan a cozy movie/series night with her favorite snacks.
 - Handle an errand she's been meaning to do.
 

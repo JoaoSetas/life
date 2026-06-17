@@ -16,7 +16,7 @@
 
 ## Upcoming / one-off
 <!-- e.g. - [ ] (2026-06-20) Buy her favorite snack on the way home — added 2026-06-16 -->
-- _(nothing yet — add appointments, errands, dates, gift ideas to act on, promises I made)_
+- [ ] (next time shopping) Buy meloa for her — she loves it — added 2026-06-17
 
 ## Promises I've made to her
 <!-- Track commitments so I actually follow through. -->
