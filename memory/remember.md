@@ -18,6 +18,7 @@
 <!-- e.g. - [ ] (2026-06-20) Buy her favorite snack on the way home — added 2026-06-16 -->
 - [x] ~~(next time shopping) Buy meloa for her — she loves it — added 2026-06-17~~ ✓ she already has it
 - [ ] (ASAP) Give her the massage she asked for — added 2026-06-18
+- [ ] (soon) Cleanse her car — added 2026-06-18
 
 ## Promises I've made to her
 <!-- Track commitments so I actually follow through. -->
