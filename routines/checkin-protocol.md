@@ -17,7 +17,7 @@
    - Is it **Monday** (Porto) or a special day? Anything in `memory/remember.md` due now?
    - Pick **one** relationship/care action from the menu in `context/relationship-goals.md` (rotate — don't repeat the last one logged today).
 4. **Output the nudge** in the short format below.
-5. **Log it.** Append a check-in entry to today's log with the timestamp, what was suggested, and (if I reply) what I did.
+5. **Log it.** Append a **short** check-in entry (1–2 lines max) to today's log: timestamp, score (done/total), what was suggested, and any due reminders. No lecturing in the log — save accountability for the live nudge.
 6. **If interactive**, ask the 1–2 quick questions at the end and update the log + checklists from my answers.
 
 ## Time blocks (what to emphasize)
@@ -46,5 +46,7 @@ Then ask (interactive only): **"What have you knocked out? Anything to remember?
 ## Principles
 - **One headline action.** Don't dump a list; lead with the single most useful thing.
 - **Tough-love, not fluff.** Be direct and hold me accountable — name the musts I've dropped and the streaks I've broken. If everything's done, a quick "good — now keep it up" plus a bonus caring act. On my side, never cruel.
+- **Keep the live nudge to ≤6 lines** after the formatted block. One short paragraph of accountability, not a lecture.
+- **Log entries are data, not essays.** One line: time, score, suggestion, due items. The log is a record, not a sermon.
 - **Always log**, even on automated runs, so the daily log is a real record.
 - **Adapt to the day:** Mondays = Porto (reach her remotely); weekends = bigger proactive help + quality time.
