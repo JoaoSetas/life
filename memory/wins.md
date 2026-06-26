@@ -13,6 +13,6 @@ Newest at top. Format: `- YYYY-MM-DD: what I did (and her reaction, if any)`
 
 ---
 ### Streaks (update on review)
-- 🍽️ Dishwasher-emptied days in a row: **1**
+- 🍽️ Dishwasher-emptied days in a row: **0** (streak died — Thu 0/7)
 - 🗑️ Garbage-out days in a row: **0**
-- 💛 Days with a caring act: **1**
+- 💛 Days with a caring act: **0** (streak died — Thu 0/7)
