@@ -13,6 +13,7 @@
 - [ ] (daily) One caring act + ask about her day first.
 - [ ] (daily, ~11:00) Dog walk — preferred time.
 - [ ] (Mondays) Send a warm message from Porto during the day.
+- [ ] (Mondays) Bring something home for her from Porto (treat, flowers, small gift).
 
 ## Upcoming / one-off
 <!-- e.g. - [ ] (2026-06-20) Buy her favorite snack on the way home — added 2026-06-16 -->
