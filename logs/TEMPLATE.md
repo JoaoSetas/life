@@ -1,15 +1,37 @@
 # Daily Log — {{DATE}} ({{WEEKDAY}})
 
-> Copy this to `logs/YYYY-MM-DD.md` at the first check-in of the day. Pregnancy ~{{WEEK}}w.
+> Pregnancy ~{{WEEK}}w.
 
-## Today's musts
-- [ ] Empty the dishwasher (check morning / midday / pre-dinner)
-- [ ] Take out the garbage (dog walk)
-- [ ] Tidy as I go — no mess left behind
-- [ ] One caring act for my wife
-- [ ] One proactive household task
-- [ ] Asked about her day & listened
+## Today's checklist
+### Kitchen
+- [ ] Empty the dishwasher
+- [ ] Load dirty dishes — nothing left in the sink
+- [ ] Wipe counters and stovetop after meals
+- [ ] Take out the garbage
+- [ ] Check all bins in the house
+
+### Laundry
+- [ ] Check washing machine — hang/fold if done
+- [ ] Put away dry/folded clothes
+
+### Living spaces
+- [ ] Make the bed
+- [ ] Scan living room — put away anything out of place
+- [ ] Scan bedroom — put away my things, clear surfaces
+- [ ] Sweep/vacuum kitchen and living room if needed
+
+### Pets
 - [ ] Dog walked (~11:00)
+- [ ] Pet bowls — food and water topped up
+- [ ] Litter box cleaned (she can't — pregnancy)
+
+### Maintenance
+- [ ] Quick scan: anything broken, leaking, running low?
+- [ ] Restock if low (toilet paper, soap, pet food, her snacks)
+
+### Her
+- [ ] Asked about her day & listened
+- [ ] One caring act
 {{MONDAY_LINE}}
 
 ## Check-ins

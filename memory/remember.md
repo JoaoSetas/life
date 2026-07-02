@@ -8,9 +8,9 @@
 - Format: `- [ ] (when) thing to remember — added YYYY-MM-DD`
 
 ## Standing
-- [ ] (daily) Empty the dishwasher — don't let her do it.
-- [ ] (daily) Take out the garbage on the dog walk.
-- [ ] (daily) One caring act + ask about her day first.
+- [ ] (daily) She is very specific about how chores are done — learn her way, do it right, don't make her redo it. Ask once how she wants it, then remember.
+- [ ] (daily) Meal prep/cooking is hers — she won't allow it. Help by cleaning up, setting the table, handling everything around the meal.
+- [ ] (daily) The priority is being PROACTIVE — do things before she asks. That's what matters most.
 - [ ] (daily, ~11:00) Dog walk — preferred time.
 - [ ] (Mondays) Send a warm message from Porto during the day.
 - [ ] (Mondays) Bring something home for her from Porto (treat, flowers, small gift).
