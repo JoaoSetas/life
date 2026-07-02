@@ -6,6 +6,7 @@
 Newest at top. Format: `- YYYY-MM-DD: what I did (and her reaction, if any)`
 
 ## 2026
+- 2026-07-02: Took out the garbage and walked the dog — broke a 9-day zero streak.
 - 2026-06-24: Gave her the massage she asked for — promise kept.
 - 2026-06-24: Emptied the dishwasher — first must completed in 9 days. The zero is broken.
 - 2026-06-16: Asked about her day and listened
