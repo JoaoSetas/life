@@ -7,6 +7,7 @@
 - [ ] Empty the dishwasher
 - [ ] Load dirty dishes — nothing left in the sink
 - [ ] Wipe counters and stovetop after meals
+- [ ] Fill water bottles and put them in the fridge
 - [ ] Take out the garbage
 - [ ] Check all bins in the house
 
@@ -28,6 +29,9 @@
 ### Maintenance
 - [ ] Quick scan: anything broken, leaking, running low?
 - [ ] Restock if low (toilet paper, soap, pet food, her snacks)
+
+### Morning (if up early)
+- [ ] Go get her something for breakfast (fruit, treat, pastry)
 
 ### Her
 - [ ] Asked about her day & listened

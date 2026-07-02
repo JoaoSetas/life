@@ -8,6 +8,7 @@
 - [ ] Empty the dishwasher (check morning / midday / pre-dinner)
 - [ ] Load dirty dishes into dishwasher — don't leave them in the sink
 - [ ] Wipe kitchen counters and stovetop after every meal
+- [ ] Fill water bottles and put them in the fridge
 - [ ] Take out the garbage (do it on the dog walk)
 - [ ] Check all bins in the house, not just the kitchen
 
@@ -29,6 +30,9 @@
 ## Maintenance & restock
 - [ ] Quick scan: anything broken, leaking, running low? Fix or buy it before she notices
 - [ ] Restock consumables if low (toilet paper, soap, pet food, her snacks)
+
+## Morning (if I wake up early)
+- [ ] Go out and get her something for breakfast (fruit she loves, a treat, pastry)
 
 ## Her
 - [ ] Ask about her day and actually listen
