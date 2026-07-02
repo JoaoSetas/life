@@ -16,6 +16,7 @@
 - Bring home a small treat or flowers. (She loves **meloa** — easy win.)
 - Plan a cozy movie/series night with her favorite snacks.
 - Handle an errand she's been meaning to do.
+- Wash her car for her — she'll notice and appreciate it. — added 2026-07-02
 
 ## Bigger (planned)
 - A **babymoon** or weekend away before the baby comes.

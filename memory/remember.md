@@ -11,6 +11,7 @@
 - [ ] (daily) She is very specific about how chores are done — learn her way, do it right, don't make her redo it. Ask once how she wants it, then remember.
 - [ ] (daily) Meal prep/cooking is hers — she won't allow it. Help by cleaning up, setting the table, handling everything around the meal.
 - [ ] (daily) The priority is being PROACTIVE — do things before she asks. That's what matters most.
+- [ ] (daily) When taking out the trash, also check if there's trash in the kitchen — don't skip it. — added 2026-07-02
 - [ ] (daily, ~11:00) Dog walk — preferred time.
 - [ ] (Mondays) Send a warm message from Porto during the day.
 - [ ] (Mondays) Bring something home for her from Porto (treat, flowers, small gift).
