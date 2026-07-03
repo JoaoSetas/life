@@ -21,6 +21,8 @@
 - [x] ~~(2026-07-03 morning) Go get meloa + something else for her breakfast — added 2026-07-02~~ ✓ done — meloa, bread, bolo de arroz
 - [x] ~~(next time shopping) Buy meloa for her — she loves it — added 2026-06-17~~ ✓ she already has it
 - [x] ~~(ASAP) Give her the massage she asked for — added 2026-06-18~~ ✓ done 2026-06-24
+- [ ] (2026-07-04 morning) Go to Ledvision — added 2026-07-03
+- [ ] (soon) Review baby strollers on Prenatal website — added 2026-07-03
 - [ ] (soon) Cleanse her car — added 2026-06-18
 - [ ] (2026-06-25 17h) Bring her something from the café — added 2026-06-25
 
