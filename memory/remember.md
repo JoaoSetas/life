@@ -18,7 +18,7 @@
 
 ## Upcoming / one-off
 <!-- e.g. - [ ] (2026-06-20) Buy her favorite snack on the way home — added 2026-06-16 -->
-- [ ] (2026-07-03 morning) Go get meloa + something else for her breakfast — added 2026-07-02
+- [x] ~~(2026-07-03 morning) Go get meloa + something else for her breakfast — added 2026-07-02~~ ✓ done — meloa, bread, bolo de arroz
 - [x] ~~(next time shopping) Buy meloa for her — she loves it — added 2026-06-17~~ ✓ she already has it
 - [x] ~~(ASAP) Give her the massage she asked for — added 2026-06-18~~ ✓ done 2026-06-24
 - [ ] (soon) Cleanse her car — added 2026-06-18

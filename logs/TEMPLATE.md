@@ -23,8 +23,7 @@
 
 ### Pets
 - [ ] Dog walked (~11:00)
-- [ ] Pet bowls — food and water topped up
-- [ ] Litter box cleaned (she can't — pregnancy)
+- [ ] Pick up dog poop from balcony
 
 ### Maintenance
 - [ ] Quick scan: anything broken, leaking, running low?

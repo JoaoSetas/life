@@ -24,8 +24,7 @@
 
 ## Pets
 - [ ] Dog walked (~11:00)
-- [ ] Check pet bowls — food and water topped up
-- [ ] Litter box cleaned (she CANNOT do this — pregnancy risk)
+- [ ] Pick up dog poop from balcony
 
 ## Maintenance & restock
 - [ ] Quick scan: anything broken, leaking, running low? Fix or buy it before she notices
